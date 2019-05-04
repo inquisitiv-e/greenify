@@ -48,25 +48,14 @@ btnLogin.addEventListener('click', e => {
   firebase.auth().onAuthStateChanged(firebaseUser => {
     if(firebaseUser) {
         console.log(firebaseUser);
-        btnLogout.classList.remove('hide');
-        btnLogin.classList.add('hide');
-        btnSignup.classList.add('hide');
-        txtEmail.style.display="none";
-        txtPS.style.display="none";
-        userName.style.display="none";
+      
         
   
-        //gets the saved score for user from database and display
-        getScoreData(firebaseUser.uid); 
+       
   
     } else {
         console.log("not logged in");
-        btnLogout.classList.add('hide');
-        btnLogin.classList.remove('hide');
-        btnSignup.classList.remove('hide');
-        txtEmail.style.display="block";
-        txtPS.style.display="block";
-        userName.style.display="block";
+        
     }
   });
 
