@@ -6,6 +6,15 @@ const btnSignup = document.getElementById('btnSignup')
 const btnLogout = document.getElementById("btnLogout");
 emsg = document.getElementById("emsg");
 
+var config = {
+  apiKey: "AIzaSyCACZPJJ4gnsfceKLEpqQPpm1JDNDVKarY",
+  authDomain: "clime-b5f97.firebaseapp.com",
+  databaseURL: "https://clime-b5f97.firebaseio.com",
+  projectId: "clime-b5f97",
+  storageBucket: "clime-b5f97.appspot.com"
+};
+firebase.initializeApp(config);
+
 function fbLogin() {
   //get email and ps
   const email = txtEmail.value;
