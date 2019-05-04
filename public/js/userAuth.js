@@ -18,18 +18,18 @@ function fbLogin() {
   promise.then(e => emsg.innerHTML = "");
 }
 
-//Add log in event
-btnLogin.addEventListener('click', e => {
-  //get email and ps
-  const email = txtEmail.value;
-  const pass = txtPassword.value;
-  const auth = firebase.auth();
-  //sign in
-  const promise = auth.signInWithEmailAndPassword(email, pass);
-  //check validation
-  promise.catch(e => emsg.innerHTML = e.message);
-  promise.then(e => emsg.innerHTML = "");
-});
+// //Add log in event
+// btnLogin.addEventListener('click', e => {
+//   //get email and ps
+//   const email = txtEmail.value;
+//   const pass = txtPassword.value;
+//   const auth = firebase.auth();
+//   //sign in
+//   const promise = auth.signInWithEmailAndPassword(email, pass);
+//   //check validation
+//   promise.catch(e => emsg.innerHTML = e.message);
+//   promise.then(e => emsg.innerHTML = "");
+// });
 
 //Add sign up event
 btnSignup.addEventListener('click', e => {
