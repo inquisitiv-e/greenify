@@ -22,6 +22,10 @@
     <script src="script.js"></script>
     <title>CSS MenuMaker</title>
 
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 
 </head>
 
@@ -37,16 +41,16 @@
   </div>
 
   <!-- <Qui></Quiz> -->
-  <div class="jumbotron" id="floatingCenter">
-    <h1 class="display-4">Quiz of the Day!</h1>
-    <p class="lead">About how long does it take a Styrofoam cup to decompose?</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg quizButton" role="button" onclick="document.getElementById('popup2').style.display='block'">10 years</a>
-        <a class="btn btn-primary btn-lg quizButton" role="button" onclick="document.getElementById('popup2').style.display='block'">2 months</a>
-          <a class="btn btn-primary btn-lg quizButton" role="button" onclick="document.getElementById('popup1').style.display='block'; incrementSeed();">400 years</a>
-            <a class="btn btn-primary btn-lg quizButton" role="button" onclick="document.getElementById('popup2').style.display='block'">150 months</a>
-    </p>
-</div>
+  <!--<div class="jumbotron" id="floatingCenter">-->
+    <!--<h1 class="display-4">Quiz of the Day!</h1>-->
+    <!--<p class="lead">About how long does it take a Styrofoam cup to decompose?</p>-->
+    <!--<p class="lead">-->
+      <!--<a class="btn btn-primary btn-lg quizButton" role="button" onclick="document.getElementById('popup2').style.display='block'">10 years</a>-->
+        <!--<a class="btn btn-primary btn-lg quizButton" role="button" onclick="document.getElementById('popup2').style.display='block'">2 months</a>-->
+          <!--<a class="btn btn-primary btn-lg quizButton" role="button" onclick="document.getElementById('popup1').style.display='block'; incrementSeed();">400 years</a>-->
+            <!--<a class="btn btn-primary btn-lg quizButton" role="button" onclick="document.getElementById('popup2').style.display='block'">150 months</a>-->
+    <!--</p>-->
+<!--</div>-->
 
 <!-- What appears as a pop up screen when user clicks on correct answer -->
 <div id="popup1" class="w3-modal">
@@ -65,11 +69,45 @@
   </div>
 </div>
 
+  <div class="container-fluid bg-info">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h3><span class="label label-warning" id="qid">1</span> How long does it take a Styrofoam cup to decompose? </h3>
+              </div>
+              <div class="modal-body">
+                  <div class="col-xs-3 col-xs-offset-5">
+                      <div id="loadbar" style="display: none;">
+                          <div class="blockG" id="rotateG_01"></div>
+                          <div class="blockG" id="rotateG_02"></div>
+                          <div class="blockG" id="rotateG_03"></div>
+                          <div class="blockG" id="rotateG_04"></div>
+                          <div class="blockG" id="rotateG_05"></div>
+                          <div class="blockG" id="rotateG_06"></div>
+                          <div class="blockG" id="rotateG_07"></div>
+                          <div class="blockG" id="rotateG_08"></div>
+                      </div>
+                  </div>
+
+                  <div class="quiz" id="quiz" data-toggle="buttons">
+                      <label class="element-animation1 btn btn-lg btn-primary btn-block" onclick="document.getElementById('popup2').style.display='block'"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">10 years</label>
+                      <label class="element-animation2 btn btn-lg btn-primary btn-block" onclick="document.getElementById('popup2').style.display='block'"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">2 months</label>
+                      <label class="element-animation3 btn btn-lg btn-primary btn-block" onclick="document.getElementById('popup1').style.display='block'; incrementSeed();"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="3">400 years</label>
+                      <label class="element-animation4 btn btn-lg btn-primary btn-block" onclick="document.getElementById('popup2').style.display='block'"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">150 months</label>
+                  </div>
+              </div>
+              <div class="modal-footer text-muted">
+                  <span id="answer"></span>
+              </div>
+          </div>
+      </div>
+  </div>
+
 <!-- What appears as a pop up screen when user clicks on incorrect answer -->
 <div id="popup2" class="w3-modal">
   <div class="w3-modal-content w3-card-4">
-      <header class="w3-container w3-red w3-display-container"> 
-      <span onclick="window.location='./index.html';" 
+      <header class="w3-container w3-red w3-display-container">
+      <span onclick="window.location='./index.html';"
               class="w3-button w3-display-topright">&times;
       </span>
       <div class="w3-container">
@@ -77,7 +115,7 @@
           <br>
           <span style="font-size:25px;">You selected the wrong answer. Try again tomorrow!</span>
       </div>
-        
+
   </div>
 </div>
 
