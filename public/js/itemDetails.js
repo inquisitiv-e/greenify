@@ -7,3 +7,9 @@ function toggle(id) {
     id.style.display = "block";
 }
 
+$(document).ready(function(){
+
+  
+    document.getElementById('seedNum').innerHTML = localStorage.getItem("numOfSeed");
+
+});

@@ -143,3 +143,12 @@
 #seed {
     float: right;
 }
+
+#seedNum {
+    width:10%;
+    background-color: #2b6932;
+    color: white;
+    border: 0;
+    margin-left: 2px;
+    padding: 2px;
+}
