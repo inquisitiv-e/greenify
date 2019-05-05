@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="./css/quiz.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="./js/bootstrap.js"></script>
+  <script src="./js/quiz.js"></script>
+
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
   <link rel="shortcut icon" href="./img/leaf.png" type="image/png">    
@@ -62,7 +64,7 @@
     <p class="lead">
       <a class="btn btn-primary btn-lg quizButton" role="button" onclick="document.getElementById('popup2').style.display='block'">10 years</a>
         <a class="btn btn-primary btn-lg quizButton" role="button" onclick="document.getElementById('popup2').style.display='block'">2 months</a>
-          <a class="btn btn-primary btn-lg quizButton" role="button" onclick="document.getElementById('popup1').style.display='block'">400 years</a>
+          <a class="btn btn-primary btn-lg quizButton" role="button" onclick="document.getElementById('popup1').style.display='block'; incrementSeed();">400 years</a>
             <a class="btn btn-primary btn-lg quizButton" role="button" onclick="document.getElementById('popup2').style.display='block'">150 months</a>
     </p>
 </div>
