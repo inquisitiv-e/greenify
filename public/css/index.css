@@ -1,0 +1,15 @@
+#cart{
+    height: 30%;
+}
+
+#blank{
+    height: 2em;
+}
+
+#givingGap{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#forCardLink:hover
+{cursor: pointer;}
