@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CliMe</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/itemDetails.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/itemDetails.js"></script>
+
+</head>
+
+<body>
+    <!-- Top Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">CliMe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active">Seed</a>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-link dropdown">
+                        <a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Cart </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">item1</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">item2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">item3</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-link dropdown">
+                        <a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">User </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Sign In</a>
+                            <a class="dropdown-item" href="#">Sign Up</a>
+                            <a class="dropdown-item" href="#">Account</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="item">
+            <img id="itemPic" src="./img/cart.png" width="400px" height="400px">
+            <form id="itemForm">
+                <h3>Item Name</h3>
+                <h5>Company Name</h5>
+                <h5>Price $14.25 CAD</h5>
+                <p>
+                    Quantity
+                    <select id="quantity">
+                        <option value="option1">1</option>
+                        <option value="option2">2</option>
+                        <option value="option3">3</option>
+                        <option value="option4">4</option>
+                    </select>
+                </p>
+                <button class="btn btn-secondary">Add to Cart</button>
+                <button class="btn btn-primary">Checkout</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="detailsTable">
+        <ul class="nav nav-tabs-m" id="tabName">
+            <li class="item active sel" role="presentation">
+                <a href="#tab1" class="vhr-tab-itm" role="tab" onclick="toggle(tab1)">Details</a>
+            </li>
+            <li class="item" role="presentation">
+                <a href="#tab2" class="vhr-tab-itm" role="tab" onclick="toggle(tab2)">Company</a>
+            </li>
+            <li class="item" role="presentation">
+                <a href="#tab3" class="vhr-tab-itm" role="tab" onclick="toggle(tab3)">Q & A</a>
+            </li>
+            <li class="item" role="presentation">
+                <a href="#tab4" class="vhr-tab-itm" role="tab" onclick="toggle(tab4)">Reviews (2)</a>
+            </li>
+        </ul>
+
+        <br>
+
+        <div class="itemDetails">
+            <div id="contents">
+                <div id="tab1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Lectus urna duis convallis convallis. A diam sollicitudin tempor id eu nisl
+                    nunc mi ipsum. Ac felis donec et odio pellentesque. Suspendisse sed nisi lacus sed viverra. Dolor
+                    purus non enim praesent elementum facilisis leo vel. Turpis tincidunt id aliquet risus feugiat.
+                    Integer eget aliquet nibh praesent tristique magna. Id cursus metus aliquam eleifend mi in nulla
+                    posuere. Velit scelerisque in dictum non consectetur a erat nam. Leo in vitae turpis massa sed.
+                    Neque aliquam vestibulum morbi blandit. Id cursus metus aliquam eleifend mi in. Lobortis feugiat
+                    vivamus at augue eget arcu dictum. Nunc id cursus metus aliquam eleifend.
+
+                    Ac turpis egestas sed tempus urna et pharetra pharetra massa. Nibh sit amet commodo nulla facilisi.
+                    Amet facilisis magna etiam tempor orci. Scelerisque fermentum dui faucibus in. Sed enim ut sem
+                    viverra aliquet eget sit. Sed faucibus turpis in eu mi. Vel fringilla est ullamcorper eget. Magna
+                    sit amet purus gravida quis blandit turpis cursus in. Aliquam faucibus purus in massa tempor nec.
+                    Faucibus purus in massa tempor. Imperdiet massa tincidunt nunc pulvinar sapien et ligula
+                    ullamcorper. Sagittis vitae et leo duis ut diam quam nulla.
+                </div>
+
+                <div id="tab2" style="display:none">
+                    Amazon is the largest e-commerce marketplace and cloud computing platform in the world as measured
+                    by revenue and market capitalization.[7] Amazon.com was founded by Jeff Bezos on July 5, 1994, and
+                    started as an online bookstore but later expanded to sell video downloads/streaming, MP3
+                    downloads/streaming, audiobook downloads/streaming, software, video games, electronics, apparel,
+                    furniture, food, toys, and jewelry. The company also owns a publishing arm, Amazon Publishing, a
+                    film and television studio, Amazon Studios, produces consumer electronics lines including Kindle
+                    e-readers, Fire tablets, Fire TV, and Echo devices, and is the world's largest provider of cloud
+                    infrastructure services (IaaS and PaaS) through its AWS subsidiary.[8] Amazon has separate retail
+                    websites for some countries and also offers international shipping of some of its products to
+                    certain other countries.[9] 100 million people subscribe to Amazon Prime.[10][11]
+
+                    Amazon is the largest Internet company by revenue in the world[12] and the second largest employer
+                    in the United States.[13] In 2015, Amazon surpassed Walmart as the most valuable retailer in the
+                    United States by market capitalization.[14] In 2017, Amazon acquired Whole Foods Market for $13.4
+                    billion, which vastly increased Amazon's presence as a brick-and-mortar retailer.[15] The
+                    acquisition was interpreted by some[by whom?] as a direct attempt to challenge Walmart's traditional
+                    retail stores.[16] 
+                </div>
+
+                <div id="tab3" style="display:none">
+                    Q.what is it
+                </div>
+
+                <div id="tab4" style="display:none">
+                    Very Good
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
