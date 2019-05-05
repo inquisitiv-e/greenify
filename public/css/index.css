@@ -11,3 +11,5 @@
     padding-right: 2em;
 }
 
+#forCardLink:hover
+{cursor: pointer;}
