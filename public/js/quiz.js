@@ -1,3 +1,5 @@
+var score = localStorage.getItem("numOfSeed");
+
 $(document).ready(function(){
 // var firebaseConfig = {
 //   apiKey: "AIzaSyCACZPJJ4gnsfceKLEpqQPpm1JDNDVKarY",
@@ -12,7 +14,6 @@ $(document).ready(function(){
 
 console.log(firebase);
 
-var ref = database.ref('quiz');
 //
 // var data = {
 //     name: "Hannah",
@@ -37,3 +38,11 @@ var ref = database.ref('quiz');
 // }, function (errorObject) {
 //   console.log("The read failed: " + errorObject.code);
 // });
+
+function incrementSeed() {
+    score++;
+    console.log("increment number of seed")
+    localStorage.setItem("numOfSeed", score);
+
+}
+console.log("store number of seed in local storage")
