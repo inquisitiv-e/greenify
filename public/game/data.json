@@ -1,0 +1,16 @@
+{
+  "topic": "sustainability",
+  "quizzes": [
+    {
+      "question": "Which of the following describes \"sustainability?\" the best?",
+      "options": [
+        "How biological systems endure and remain diverse and productive.",
+        "Contamination of water bodies, usually as a result of human activities.",
+        "A mix of particles and gases that can reach harmful concentrations both outside and indoors.",
+        "The software that supports a computer's basic functions, such as scheduling tasks, executing applications, and controlling peripherals.",
+        "A conceptual model that characterizes and standardizes the communication functions of a telecommunication or computing system without regard to its underlying internal structure and technology."
+      ],
+      "answer": "How biological systems endure and remain diverse and productive."
+    }
+  ]
+}
