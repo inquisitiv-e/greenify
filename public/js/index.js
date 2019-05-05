@@ -30,7 +30,5 @@ $(document).ready(function(){
     $("#quizBanner").click(function(){
         window.location = $(this).attr("href");
     });
-    document.getElementById('seedNum').value = localStorage.getItem("numOfSeed");
-
 });
 
