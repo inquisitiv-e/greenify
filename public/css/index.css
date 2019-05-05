@@ -11,10 +11,12 @@
     padding-right: 2em;
 }
 
-#forCardLink:hover
-{cursor: pointer;}
+#quiz {
+    width: 100%;
+    height: 100%;
+}
 
-.myLinkHover:hover
+.myLinkHover :hover
 {cursor: pointer;}
 
 .hovereffect {
@@ -105,10 +107,9 @@
     transition-delay:.2s;
 }
 
-
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 #cssmenu {
-    background: #327a39;
+    background: #2b6932;
     width: auto;
 }
 #cssmenu ul {
@@ -226,3 +227,8 @@
         display: none;
     }
 }
+#containers {
+    width: 50%;
+    height: 50%;
+}
+
