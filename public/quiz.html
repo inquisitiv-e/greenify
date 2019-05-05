@@ -10,7 +10,8 @@
   <script src="./js/bootstrap.js"></script>
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
-  <link rel="shortcut icon" href="./img/leaf.png" type="image/png">
+  <link rel="shortcut icon" href="./img/leaf.png" type="image/png">    
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
 
@@ -54,17 +55,66 @@
     </div>
   </nav>
 
-  <!-- <Qui></Qui>z -->
+  <!-- <Qui></Quiz> -->
   <div class="jumbotron" id="floatingCenter">
     <h1 class="display-4">Quiz of the Day!</h1>
     <p class="lead">About how long does it take a Styrofoam cup to decompose?</p>
     <p class="lead">
-      <a class="btn btn-primary btn-lg" role="button">10 years</a>
-        <a class="btn btn-primary btn-lg" role="button">2 months</a>
-          <a class="btn btn-primary btn-lg" role="button">400 years</a>
-            <a class="btn btn-primary btn-lg" role="button">150 months</a>
+      <a class="btn btn-primary btn-lg" role="button" onclick="document.getElementById('popup2').style.display='block'">10 years</a>
+        <a class="btn btn-primary btn-lg" role="button" onclick="document.getElementById('popup2').style.display='block'">2 months</a>
+          <a class="btn btn-primary btn-lg" role="button" onclick="document.getElementById('popup1').style.display='block'">400 years</a>
+            <a class="btn btn-primary btn-lg" role="button" onclick="document.getElementById('popup2').style.display='block'">150 months</a>
     </p>
 </div>
+
+<!-- What appears as a pop up screen when user clicks on correct answer -->
+<div id="popup1" class="w3-modal">
+  <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal"> 
+      <span onclick="window.location='./index.html';" 
+              class="w3-button w3-display-topright">&times;
+      </span>
+      <div class="w3-container">
+          <h1>Congratulations!</h1>
+          <br>
+          <span style="font-size:25px;">You successfully answered today's quiz<br>1 seed was added to your account</span>
+          <img src="./img/seed.png" width="150px" height="150px" id="seed">
+      </div>
+        
+  </div>
+</div>
+
+<!-- What appears as a pop up screen when user clicks on incorrect answer -->
+<div id="popup2" class="w3-modal">
+  <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-red w3-display-container"> 
+      <span onclick="window.location='./index.html';" 
+              class="w3-button w3-display-topright">&times;
+      </span>
+      <div class="w3-container">
+          <h1>Oops</h1>
+          <br>
+          <span style="font-size:25px;">You selected the wrong answer. Try again tomorrow!</span>
+      </div>
+        
+  </div>
+</div>
+
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('popup1');
+  var modal2 = document.getElementById('popup2');
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+        window.location='./index.html';
+      }
+      if (event.target == modal2) {
+        window.location='./index.html';
+      }
+  }
+</script>
 
 
 

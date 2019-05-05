@@ -128,3 +128,15 @@
         display: none;
     }
 }
+
+#answer {
+    text-align:center;
+    font-size:5em; 
+    background-color:green;
+    color:white; 
+    border-radius:20px;
+}
+
+#seed {
+    float: right;
+}
