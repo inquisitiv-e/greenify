@@ -11,7 +11,7 @@
     padding-right: 2em;
 }
 
-.card a {
+.card-body h5 p {
     text-decoration: none !important;
     color: black !important;
 }
