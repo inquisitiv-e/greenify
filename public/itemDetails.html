@@ -6,9 +6,11 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/bootstrap.css"/>
     <link rel="stylesheet" href="./css/itemDetails.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/itemDetails.js"></script>
+    <link rel="shortcut icon" href="./img/leaf.png" type="image/png">
 
 </head>
 
@@ -104,13 +106,38 @@
                         <span class="color blue"></span>
                     </h5>
                     <div class="action">
-                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                        <button class="add-to-cart btn btn-default" onclick="document.getElementById('popup').style.display='block'">add to cart</button>
                         <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+                    </div>
+                </div>
+
+                <!-- What appears as a pop up screen when user clicks on correct answer -->
+                <div id="popup" class="w3-modal">
+                    <div class="w3-modal-content w3-card-4">
+                        <header class="w3-container w3-teal"> 
+                            <span onclick="document.getElementById('popup').style.display='none'" 
+                                class="w3-button w3-display-topright">&times;
+                            </span>
+                                <div class="w3-container">
+                                    <h3>Your item was added to your cart!</h3>
+                                </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('popup');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>

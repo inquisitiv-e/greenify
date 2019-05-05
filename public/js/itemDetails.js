@@ -6,3 +6,4 @@ function toggle(id) {
 
     id.style.display = "block";
 }
+
