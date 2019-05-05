@@ -1,5 +1,9 @@
 
 #givingGap{
-    padding-left: 2em;
+    margin-left: 2em;
     padding-right: 2em;
+}
+
+#floatingCenter{
+    margin:5em !important;
 }
