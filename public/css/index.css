@@ -11,7 +11,7 @@
     padding-right: 2em;
 }
 
-.card-body h5 p {
+a {
     text-decoration: none !important;
     color: black !important;
 }
