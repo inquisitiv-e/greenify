@@ -1,5 +1,5 @@
-# hfh2019
+# greenify
 
 Hacking for Humanity 2019
 
-CLIME link: https://clime-b5f97.firebaseapp.com/
+link: https://clime-b5f97.firebaseapp.com/
