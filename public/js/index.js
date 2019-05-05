@@ -21,3 +21,11 @@ $(document).ready(function(){
     });
 
 });
+
+$(document).ready(function(){
+
+    $("#quizBanner").click(function(){
+        window.location = $(this).attr("href");
+    });
+
+});
