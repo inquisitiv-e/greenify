@@ -1,6 +1,22 @@
 $(document).ready(function(){
 
-    $("#forCardLink").click(function(){
+    $("#forItem").click(function(){
+        window.location = $(this).attr("href");
+    });
+
+});
+
+$(document).ready(function(){
+
+    $("#forDiscount").click(function(){
+        window.location = $(this).attr("href");
+    });
+
+});
+
+$(document).ready(function(){
+
+    $("#forQuiz").click(function(){
         window.location = $(this).attr("href");
     });
 

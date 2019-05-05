@@ -85,12 +85,26 @@
     -webkit-transition-delay:.2s;
     transition-delay:.2s;
 }
+.card .mb-4 .shadow-sm {
+
+}
 
 .card-height {
     height : 24em;
 }
 
 .jumbotron {
-    background-image: url("../img/lawn_topnav_banner.jpg");
+    background-image: url("../img/gBanner.png");
     background-size: cover;
+}
+
+#toTransparent{
+    height:2em !important;
+}
+
+#makePosition {
+    position: relative;
+    top: 225px;
+    vertical-align:bottom !important;
+
 }
