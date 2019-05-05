@@ -5,3 +5,11 @@ $(document).ready(function(){
     });
 
 });
+
+$(document).ready(function(){
+
+    $("#item2").click(function(){
+        window.location = $(this).attr("href");
+    });
+
+});

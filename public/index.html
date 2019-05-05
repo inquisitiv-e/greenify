@@ -2,13 +2,14 @@
 <html>
 
 <head>
-    <title>CliMe</title>
+    <title>greenify</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/index.js"></script>
+    <link rel="shortcut icon" href="./img/leaf.png" type="image/png">
 
 </head>
 
@@ -25,20 +26,11 @@
                     <a class="nav-link active">Seeds</a>
                 </li>
                 <li class="nav-item">
-                    <div class="nav-link dropdown">
-                        <a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="myLinkHover">Cart </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">item1</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">item2</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">item3</a>
-                        </div>
-                    </div>
+                    <a class="nav-link" href="./cart.html">Cart </a>
                 </li>
                 <li class="nav-item">
                     <div class="nav-link dropdown">
-                        <a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="myLinkHover">User </a>
+                        <a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="myLinkHover" >User </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="#">Sign In</a>
                             <a class="dropdown-item" href="#">Sign Up</a>
@@ -58,13 +50,13 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-interval="3000">
                 <img class="d-block w-100" src="./img/main01.png" alt="First slide">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-interval="3000">
                 <img class="d-block w-100" src="./img/main02.png" alt="Second slide">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-interval="3000">
                 <img class="d-block w-100" src="https://dummyimage.com/1200x400/000/fff" alt="Third slide">
             </div>
         </div>
