@@ -24,7 +24,16 @@
 
     <!-- Main CSS-->
     <link href="css/main.css" rel="stylesheet" media="all">
-
+    <style>
+        #seedNum {
+            width:10%;
+            background-color: #2b6932;
+            color: white;
+            border: 0;
+            margin-left: 2px;
+            padding: 2px;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,7 +41,7 @@
     <ul>
         <li class='active'><a href='./index.html'><span>greenify</span></a></li>
         <li><a href="./cart.html"><span>Cart</span></a></li>
-        <li><a href='#'><span>User</span></a></li>
+        <li><a href='./login.html'><span>User</span></a></li>
         <li class='last'><span><img src="./img/seed.png" width="25px"><span id="seedNum"></span></span></li>
     </ul>
 </div>
@@ -103,6 +112,11 @@
 
     <!-- Main JS-->
     <script src="../../../Downloads/colorlib-regform-2/js/global.js"></script>
+    <script>
+        $(document).ready(function(){
+            document.getElementById('seedNum').innerHTML = localStorage.getItem("numOfSeed");
+        });
+    </script>
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
