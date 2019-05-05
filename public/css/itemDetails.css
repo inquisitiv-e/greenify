@@ -1,0 +1,24 @@
+#itemPic {
+    display: inline-block;
+}
+
+#itemForm {
+    display:inline-block;
+    margin: 1em 5.5em;
+}
+
+.container {
+    width:60em;
+    text-align: center;
+    margin-top: 5em;
+}
+
+.detailsTable {
+    margin:5em 3em;
+}
+
+#tabName a {
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+}
