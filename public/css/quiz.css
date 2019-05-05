@@ -1,6 +1,8 @@
 .quizButton{
     margin-left: 13px !important;
         margin-right: 13px !important;
+        margin-top:4px !important;
+        margin-bottom: 4px !important;
 }
 #givingGap{
     margin-left: 2em;
