@@ -77,10 +77,10 @@ $(function(){
 
     $ans = 3;
 
-    $.fn.checking = function(ck) {
-        if (ck != $ans)
-            return 'INCORRECT';
-        else
-            return 'CORRECT';
-    };
+    // $.fn.checking = function(ck) {
+    //     if (ck != $ans)
+    //         return 'INCORRECT';
+    //     else
+    //         return 'CORRECT';:
+    // };
 });
