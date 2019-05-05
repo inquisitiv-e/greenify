@@ -11,6 +11,8 @@
 
 #floatingCenter{
     margin:5em !important;
+    background-image: url("../img/greenBanner.jpg");
+    background-size: cover;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);

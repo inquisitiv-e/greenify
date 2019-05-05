@@ -41,7 +41,7 @@ console.log(firebase);
 
 function incrementSeed() {
     score++;
-    console.log("increment number of seed")
+    console.log("increment number of seed");
     localStorage.setItem("numOfSeed", score);
 
 }
