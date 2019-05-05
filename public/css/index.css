@@ -11,7 +11,12 @@
     padding-right: 2em;
 }
 
-a {
+.card-title {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.card-text {
     text-decoration: none !important;
     color: black !important;
 }
