@@ -1,0 +1,56 @@
+<!-- 여기 있는 거 나중에 퀴즈페이지에 복붙하면 돼요~~! -->
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <style>
+            #answer {
+                text-align:center;
+                font-size:5em; 
+                background-color:green;
+                color:white; 
+                border-radius:20px;
+            }
+
+            #seed {
+                float: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button id="answer" onclick="document.getElementById('popup').style.display='block'">ANSWER</button>
+
+        <!-- What appears as a pop up screen when user clicks on correct answer -->
+        <div id="popup" class="w3-modal">
+            <div class="w3-modal-content w3-card-4">
+                <header class="w3-container w3-teal"> 
+                <span onclick="document.getElementById('popup').style.display='none'" 
+                        class="w3-button w3-display-topright">&times;
+                </span>
+                <div class="w3-container">
+                    <h1>Congratulations!</h1>
+                    <br>
+                    <span style="font-size:25px;">You successfully answered today's quiz<br>1 seed was added to your account</span>
+                    <img src="./img/seed.png" width="150px" height="150px" id="seed">
+                </div>
+                  
+            </div>
+        </div>
+
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('popup');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
