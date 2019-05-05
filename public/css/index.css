@@ -235,7 +235,11 @@ body{
     height: 50%;
 }
 
-.card-group .card {
-    margin-top: 16px;
+#seedNum {
+    width:10%;
+    background-color: white;
+    border: 0;
+    margin-left: 2px;
+    padding: 2px;
 }
 
