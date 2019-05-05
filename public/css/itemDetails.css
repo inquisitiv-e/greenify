@@ -22,3 +22,8 @@
     color: black;
     margin-right: 30px;
 }
+
+.carousel {
+    width:400px;
+    height:360px;
+}
