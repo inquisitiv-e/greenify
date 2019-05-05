@@ -12,7 +12,6 @@ $(document).ready(function(){
 // };
 // firebase.initializeApp(firebaseConfig);
 
-console.log(firebase);
 
 //
 // var data = {
