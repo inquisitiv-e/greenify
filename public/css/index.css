@@ -232,3 +232,10 @@
     height: 50%;
 }
 
+#seedNum {
+    width:10%;
+    background-color: white;
+    border: 0;
+    margin-left: 2px;
+    padding: 2px;
+}
